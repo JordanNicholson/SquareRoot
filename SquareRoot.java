@@ -13,19 +13,18 @@ public class SquareRoot {
     	// Create the input scanner
         Scanner input = new Scanner(System.in);
 
-        // Ask the user for the diameter
+        // Ask the user for the radicand
         System.err.print("Enter a number to square root: ");
         double radicand = input.nextDouble();
 
-        // Check that the input is not negative
-        // TODO: Change this part of the program to repeatedly error check
+        // Check that the input is not negative and repeat until there is a valid input
         while (radicand < 0) {
             System.err.println("Invalid input!");
             System.err.print("Enter a number to square root: ");
             radicand = input.nextDouble();
         }
 
-        // Calculate the circumference
+        // Calculate the square root
         double root = Math.sqrt(radicand);
 
         // Create a decimal formatter
